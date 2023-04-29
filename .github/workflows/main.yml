@@ -30,6 +30,6 @@ jobs:
         run: |
           aws s3 sync \
             --region ap-northeast-2 \
-            build s3://my-vite-app \
+            dist s3://my-vite-app \
             --delete
         working-directory: ./my-bucket-app
